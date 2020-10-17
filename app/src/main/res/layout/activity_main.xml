@@ -1,42 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_centerVertical="true"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context=".MainActivity">
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="182dp"
-        android:layout_marginBottom="323dp"
-        android:contentDescription="@string/todo"
-        android:src="@drawable/login" />
-
     <Button
+        android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="82dp"
-        android:layout_marginBottom="339dp"
-        android:text="@string/b_name"
-        android:textSize="20sp"
+        android:drawableStart="@drawable/login"
+        android:drawablePadding="20dp"
+        android:text="@string/login"
         android:textStyle="italic"
+        android:layout_margin="40dp"
 
         />
 
     <Button
+        android:id="@+id/logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="95dp"
-        android:layout_marginBottom="215dp"
         android:drawableStart="@drawable/logout"
+        android:drawablePadding="10dp"
         android:text="@string/logout"
         android:textStyle="italic" />
-</RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:textSize="20sp" />
+</LinearLayout>
