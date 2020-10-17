@@ -16,7 +16,7 @@
         android:drawablePadding="20dp"
         android:text="@string/login"
         android:textStyle="italic"
-        android:layout_margin="40dp"
+        android:layout_margin="20dp"
 
         />
 
