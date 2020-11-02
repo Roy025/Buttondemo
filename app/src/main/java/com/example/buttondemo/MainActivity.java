@@ -3,6 +3,7 @@ package com.example.buttondemo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
@@ -32,12 +33,11 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     public void onClick(View v) {
         Toast toast;
         if(v.getId()==R.id.login) {
-             toast = Toast.makeText(MainActivity.this,"Login Button is clicked",Toast.LENGTH_SHORT);
+            Log.d("Tag","Login button is clicked");
         } else {
-             toast = Toast.makeText(MainActivity.this,"Logiout Button is clicked",Toast.LENGTH_SHORT);
+             Log.d("Tag","Logout Button is clicked");
         }
-             toast.setGravity(Gravity.CENTER ,0,0);
-             toast.show();
+
 
     }
 }
